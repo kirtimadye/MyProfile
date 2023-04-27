@@ -4,34 +4,85 @@
     <title>Index Page</title>
      <!-- CDN Link -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Google Font Family -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+     <style>
+        body{
+            margin-right: 10px;
+        }
+        *
+        {
+            margin:0px;
+            padding:0px;
+        }
+        /* header
+        {
+            
+        } */
+        header,span
+        {
+            color:#5d07ad;
+            background-color: palegoldenrod;
+            /* background-color: #dab6e3; */
+            font-size:x-large;
+            margin-right: 10px;
+            padding:15px;
+            /* font-family: 'Sriracha', cursive; */
+            font-family: 'Times New Roman', Times, serif;
+        
+
+        }
+        a{
+            padding:10px;
+        }
+
+        #hero,a
+        {
+            
+            margin-right: 10px;
+            text-transform: uppercase;
+            font-size: larger;
+        }
+        #user,b
+        {
+           font-size: x-large; 
+           padding:10px;
+           font-family: 'Times New Roman', Times, serif;
+           background-color: palegoldenrod;
+        }
+     </style>
 </head>
 <body>
     <header>
-        <i class="fa fa-user-circle" aria-hidden="true"></i>
-    <span>Rahitya Shinde</span> &nbsp; &nbsp; &nbsp;
+    <i class="fa fa-user-circle" aria-hidden="true"></i>
+    <span>Rahitya Shinde</span> 
     <i class="fa fa-phone-square" aria-hidden="true"></i>
-    <span>4567890765</span> &nbsp; &nbsp; &nbsp;
+    <span>4567890765</span> 
     <i class="fa fa-envelope-o" aria-hidden="true"></i>
     <span>rahityashinde@gmail.com</span>
     </header>
     <br>
-    <nav>
-        <a href="home.html" target="frame">Home</a>&nbsp;&nbsp;&nbsp;
-        <a href="techStack.html" target="frame">Technology Stack</a>&nbsp;&nbsp;&nbsp;
-        <a href="education.html" target="frame">Education</a>&nbsp;&nbsp;&nbsp;
-        <a href="personal.html" target="frame">Personal</a>&nbsp;&nbsp;&nbsp;
-        <a href="contactus.html" target="frame">Contact Me</a>&nbsp;&nbsp;&nbsp;
+    <nav id="hero">
+        <a href="home.html" target="frame">Home</a>
+        <a href="techStack.html" target="frame">Technology Stack</a>
+        <a href="education.html" target="frame">Education</a>
+        <a href="personal.html" target="frame">Personal</a>
+        <a href="contactus.html" target="frame">Contact Me</a>
     </nav>
     
     <br><br>
-    <iframe width="900px" height="400px" name="frame" src="home.html"></iframe>
+    <iframe width="950px" height="400px" name="frame" src="home.html"></iframe>
     <br><br>
-    <span>Follow me</span> &nbsp; &nbsp; &nbsp;
-    <a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a> &nbsp; &nbsp; &nbsp;
-    <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a> &nbsp; &nbsp; &nbsp;
-    <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a> &nbsp; &nbsp; &nbsp;
-    <a href=""><i class="fa fa-google" aria-hidden="true"></i></a> &nbsp; &nbsp; &nbsp;
+<footer id="user">
+    <b>Follow me </b>
+    <a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a> 
+    <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a> 
+    <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a> 
+    <a href=""><i class="fa fa-google" aria-hidden="true"></i></a> 
     <a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
+ </footer>
 
 </body>
 </html>

@@ -2,19 +2,58 @@
 <html>
     <head>
         <title>Using GITHUB</title>
-        <!-- <style>
-            table,tr,td{
-                border:2px solid black;
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+        <style>
+            *
+            {
+                font-family: 'Roboto Slab', serif;
             }
-        </style> -->
+            label{
+                color:cadetblue;
+                font-size:x-large;
+            }
+            input{
+                width:400px;
+                height:25px;
+                border-radius: 10px;
+                border:1px solid burlywood;
+                
+            }
+            input[type="text"]
+            {
+                text-transform:capitalize;
+            }
+            input[type="email"]
+            {
+                color:chocolate;
+            }
+            button{
+                padding:10px;
+                font-size:x-large;
+                font-family:'Times New Roman', Times, serif;
+                color:rgba(28, 7, 49, 0.699);
+                margin:30px;
+                border-radius:20px;
+                border: hsl(75, 86%, 39%);
+                background-color:rgb(219, 227, 200);
+                border:5px solid ;
+            }
+            button:hover
+            {
+                background-color: brown;
+            }
+        </style>
     </head>
     <body>
         <h1>Contact Us</h1>
             <form>
                 <table>
+                    <tbody>
                     <tr>
                         <td><label for="fname"><strong>Full Name:</strong></label></td>
-                        <td><input type="text" id="fname" placeholder="Max Character length 40" autofocus required></td>
+                        <td><input type="text" id="fname" maxlength="40" placeholder="Max Character length 40" autofocus required></td>
                     </tr>
                     <tr><td><label for="mobno"><strong>Mobile No:</strong></label></td>
                         <td><input type="text" id="mobno" required></td>
@@ -27,11 +66,11 @@
                         <td><label><strong>Enquiry:</strong></label></td>
                         <td><textarea cols="40" rows="7"></textarea></td>
                     </tr>
-                    <tr>
-                        <td>
-                        <input type="submit" value="Submit"></td>
-                        <td><input type="reset" value="Clear"></td>
-                    </tr>               
+                    <tr id="submit">
+                        <td><button>Submit</button></td>
+                        <td><button type="reset">Clear</button></td>
+                    </tr>  
+                </tbody>             
                 </table>
             </form>
     </body>
